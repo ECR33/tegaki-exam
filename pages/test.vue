@@ -166,7 +166,8 @@ export default {
     },
   },
   async mounted() {
-    let res = await this.$axios.get('/questions.csv')
+    const base = '/tegaki-exam'
+    let res = await this.$axios.get(`${base}/questions.csv`)
     this.questions = Papa.parse(res.data, { header: true }).data
     this.parsed_questions = kt.csv2obj(res.data)
     console.log(`parsed_questions: ${JSON.stringify(this.parsed_questions)}`)
