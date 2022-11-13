@@ -171,7 +171,7 @@ export default {
     this.questions = Papa.parse(res.data, { header: true }).data
     this.parsed_questions = kt.csv2obj(res.data)
     console.log(`parsed_questions: ${JSON.stringify(this.parsed_questions)}`)
-    res = await this.$axios.get('/tests.csv')
+    res = await this.$axios.get(`${base}/tests.csv`)
     console.log('tests row', res.data)
     this.tests = kt.csv2tests(res.data)
     console.log('tests', JSON.stringify(this.tests))
