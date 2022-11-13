@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Ftegaki-exam\u002F_nuxt\u002Fstatic\u002F1668323233",layout:"default",error:a,serverRendered:true,routePath:"\u002Finspire",config:{_app:{basePath:"\u002Ftegaki-exam\u002F",assetsPath:"\u002Ftegaki-exam\u002F_nuxt\u002F",cdnURL:a}}}}(null));
